@@ -1,0 +1,476 @@
+@import "./reset";
+@import "./palette";
+@import "./fonts";
+
+
+.cuerpo {
+    background: $azul;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar {
+    background: $azul;
+
+  
+    .nav-link{
+        font: $subtitulo;
+        color: $verde;
+    }
+    .logo {
+        width: 10%;
+    }
+}
+
+
+.bienvenida {
+
+    margin-bottom: 10%;
+    margin-top: 3rem;
+    
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 90%;
+    gap: 40px;  
+    height: fit-content;
+
+    border-radius: 15px;
+
+    background: #212121;
+    padding: 2rem 8rem;
+   
+        .foto {
+            .imgFoto {
+                width: 100%;
+            }
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            
+
+                h2 {
+                    font: $subtitulo;
+                    color: $gris;
+                    font-size: 20px;
+                }
+                h1 {
+                    font: $titulo;
+                    color: $verde;
+                    font-size: 50px;
+                }
+                p {
+                    font: $parrafo;
+                    color: $blanco;
+                    
+                }
+
+                .botones {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    
+
+                    
+                }
+                .btn_cv {
+                    
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 2rem;
+                    gap: 20px;
+                    width: 80%;
+                    
+                    a {
+                        text-decoration: none;
+                        color: $blanco;
+                    }
+
+                    .btnHab {
+                        background-color: $morado;
+                        color: $blanco;
+                        border-radius: 10px;
+                        
+                        
+                    }
+                    .btnTray {
+                        background-color: $morado;
+                        color: $blanco;                        
+                        border-radius: 10px;
+                        
+                    }
+                   
+
+                }
+        }
+
+}
+
+.habilidades {
+    width: 90%;
+    color: $verde;
+    
+    border-radius: 15px;
+    padding: 2rem 8rem;
+
+    
+
+    background-color: #212121;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+    
+    .card {
+        background: $azul;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: $blanco;
+    }
+
+    .skillsCardsTop {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .skillsCardsDown {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        
+    }
+}
+
+.trayectoria {
+    
+    width: 90%;
+    color: $verde;
+
+    border-radius: 15px;
+
+    background-color: #212121;
+    padding: 1rem 4rem;
+    margin: 4rem 5rem;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    .trayCards {
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        text-align: center;
+       
+
+        background: none;
+        img {
+            border-radius: 10px;
+            width: 70%;
+            margin-bottom: none;
+        }
+        h2 {
+            font: $titulo;
+            color: $verde;
+        }
+        h4 {
+            font: $subtitulo;
+            color: $gris;
+            font-size: small;
+        }
+        p {
+            font: $parrafo;
+            color: $blanco;
+        }
+    }
+
+    }
+}
+
+.footer {
+    background: #212121;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+
+    padding: 2rem;
+
+   
+    h2 {
+        font-size: 15px;
+        color: $blanco;
+    }
+
+    .rss {
+
+
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        width: 80px;
+        gap: 10px;
+        
+        h2 {
+            font: $subtitulo;
+            color: $blanco;
+            
+        }
+        
+        li {
+        list-style: none;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.carousel {
+    width: 70%;
+    padding: 1rem 7rem;
+    img {
+        border-radius: 15px;
+    }
+}
+
+
+.portafolio {
+    margin: 1rem 6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    .tituloP {
+        font: $titulo;
+        color: $verde;
+    }
+    .textoP {
+        font: $subtitulo;
+        color: $blanco;
+    }
+}
+
+.botones-porta {
+
+   margin-bottom: 2rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+
+    .botones {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+        
+
+        button {
+            width: 20%;
+            border-radius: 100%;
+            background: #212121;
+            border-color: black;
+            
+            img {
+                width: 100%;
+                
+            }
+        }
+    }
+
+}
+
+.ilustracion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+
+    h2{
+        font: $titulo;
+        color: $verde;
+    }
+    .galeria{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0rem 5rem;
+        
+
+        .bloque1 {
+            padding: 2rem 0rem;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        img {
+            width: 30%;
+            border-radius: 15px;
+        }
+                }
+        .bloque2 {
+            
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            img {
+                width: 30%;
+                border-radius: 15px;
+            }
+        }
+        
+    }
+}
+
+.btnVolver {
+    font: $parrafo;
+    color: #212121;
+    background: $verde;
+    border-radius: 5px;
+    width: 15%;
+    margin: 2rem 0rem;
+    a {
+        text-decoration: none;
+        color: #212121;
+    }
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+
+    h2{
+        font: $titulo;
+        color: $verde;
+    }
+    .galeria{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0rem 5rem;
+        
+
+        .bloque1 {
+            padding: 2rem 0rem;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        img {
+            width: 30%;
+            border-radius: 15px;
+        }
+                }
+        .bloque2 {
+            
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            img {
+                width: 30%;
+                border-radius: 15px;
+            }
+        }
+        
+    }
+}
+
+.logofolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+
+    h2{
+        font: $titulo;
+        color: $verde;
+    }
+    .galeria{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0rem 5rem;
+        
+
+        .bloque1 {
+            padding: 2rem 0rem;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        img {
+            width: 30%;
+            border-radius: 15px;
+        }
+                }
+        .bloque2 {
+            
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            img {
+                width: 30%;
+                border-radius: 15px;
+            }
+        }
+        
+    }
+}

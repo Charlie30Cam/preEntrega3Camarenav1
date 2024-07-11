@@ -6,6 +6,13 @@
     font-size: 30px;
 }
 
+#emojiFuego {
+    font-size: 20px;
+}
+
+#emojiMusculo {
+    font-size: 30px;
+}
 .cuerpo {
     background: $azul;
     display: flex;
@@ -25,7 +32,7 @@
 
     gap: 1rem;
 
-    margin-top: 2rem;
+    margin: 2rem 0rem;
     
 
     .iconLogo {
@@ -72,58 +79,32 @@
     
 }
 
-.navbar {
-    background: $azul;
-    margin-top: 1rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  
-    .nav-link{
-        font: $subtitulo;
-        color: $verde;
-    }
-    .logo {
-        width: 5%;
-    }
-}
 
 
 .bienvenida {
 
-    margin-bottom: 10%;
-    margin-top: 3rem;
-    
+  
+    margin-bottom: 10px;
     
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-
-    width: 90%;
-    gap: 40px;  
-    height: fit-content;
-
+    width: 70%;
     border-radius: 15px;
-
     background: #212121;
-    padding: 2rem 8rem;
-   
-        .foto {
-            .imgFoto {
-                width: 100%;
-            }
+    padding: 0rem 2rem;
+    
+        .imgFoto {
+            width: 30%;
+            margin: 20px;
         }
 
         .info {
+            line-height: 25px;
             display: flex;
             flex-direction: column;
             align-items: start;
-            
-
                 h2 {
                     font: $subtitulo;
                     color: $gris;
@@ -133,30 +114,26 @@
                     font: $titulo;
                     color: $verde;
                     font-size: 50px;
+                    font-weight: 800;
                 }
                 p {
                     font: $parrafo;
                     color: $blanco;
-                    
+                    text-align: left;
+                    font-weight: 600;
                 }
-
                 .botones {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     width: 100%;
-                    
-
-                    
                 }
                 .btn_cv {
-                    
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     grid-template-rows: 2rem;
                     gap: 20px;
                     width: 80%;
-                    
                     a {
                         text-decoration: none;
                         color: $blanco;
@@ -181,13 +158,125 @@
         }
 
 }
+        
+
+.subMenu {
+    width: 70%;
+    h2 {
+        color: $blanco;
+    }
+    
+    padding: 0rem 3rem;
+    border-radius: 20px;
+    padding-top: 1rem;
+
+    h2{
+        font: $titulo;
+        font-size: 40px;
+        font-weight: 800;
+        text-align: center;
+    }
+    .subMenuOps {
+        margin: 2rem 0rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 25px;
+        
+        button {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 15px;
+            
+            font-size: 25px;
+            padding: 30px 30px;
+            line-height: 40px;
+            font: $subtitulo;
+            font-weight: 800;
+            background: #212121;
+            a {
+                color: $verde;
+                text-decoration: none;
+            }
+        }
+
+        .ver {
+            width: 100%;
+            height: 100px;
+            grid-column: 1/3;
+            
+            
+        }
+        .cono{
+            width: 100%;
+            height: 100px;
+            grid-column: 3/5;
+            
+        }
+        .cot{
+            width: 100%;
+            height: 100px;
+            grid-column: 1/3;
+            
+        }
+        .exp{
+            width: 100%;
+            height: 100px;
+            grid-column: 3/5;
+            
+        }
+
+        
+    }
+}
+
+
+.ultiActual {
+    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+
+    .info {
+        width: 30%;
+
+        margin: 40px 60px;
+
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        p {
+            font: $parrafo;
+            color: $blanco;
+            font-weight: 600;
+        }
+        h3 {
+            font: $subtitulo;
+            font-weight: 800;
+            color: $verde;
+        }
+    }
+    .imgBotella {
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+    
+}
 
 .habilidades {
     width: 90%;
     color: $verde;
     
     border-radius: 15px;
-    padding: 2rem 8rem;
+    
 
     
 

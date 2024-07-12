@@ -23,6 +23,7 @@
 }
 
 .navbar2 {
+    
     width: 80%;
 
     display: grid;
@@ -92,7 +93,7 @@
     justify-content: center;
     width: 70%;
     border-radius: 15px;
-    background: #212121;
+   
     padding: 0rem 2rem;
     
         .imgFoto {
@@ -168,7 +169,7 @@
     
     padding: 0rem 3rem;
     border-radius: 20px;
-    padding-top: 1rem;
+    margin-top: 1rem;
 
     h2{
         font: $titulo;
@@ -221,7 +222,10 @@
             width: 100%;
             height: 100px;
             grid-column: 1/3;
-            
+            background: #25D366;
+            a {
+                color: $azul;
+            }
         }
         .exp{
             width: 100%;
@@ -236,41 +240,96 @@
 
 
 .ultiActual {
-    width: 70%;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
 
     .info {
+
         width: 30%;
 
-        margin: 40px 60px;
+        margin: 40px 80px;
 
         position: absolute;
+
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: center;
+
         p {
             font: $parrafo;
             color: $blanco;
             font-weight: 600;
+
         }
         h3 {
             font: $subtitulo;
             font-weight: 800;
             color: $verde;
+            font-size: 50px;
         }
     }
     .imgBotella {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+
         img {
             width: 100%;
-            border-radius: 20px;
+            
         }
     }
     
+    
 }
 
+
+.top {
+    margin: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    h3 {
+        font-size: 15px;
+        font-weight: 700;
+        font: $subtitulo;
+        color: $blanco;
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: 800;
+        font: $titulo;
+        color: $verde;
+    }
+}
+.menu {
+    gap: 40px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    button {
+        width: 400px;
+        background: $verde;
+        border-radius: 15px;
+        a {
+            font: $subtitulo;
+            font-size: 20px;
+            font-weight: 700;
+            color: #212121;
+            text-decoration: none;
+        }
+    }
+}
+
+/*
 .habilidades {
     width: 90%;
     color: $verde;
@@ -365,6 +424,7 @@
     }
 }
 
+*/
 .footer {
     background: #212121;
     width: 100%;
@@ -404,7 +464,8 @@
         }
     }
 }
-
+    
+/*
 .carousel {
     width: 70%;
     padding: 1rem 7rem;
@@ -628,3 +689,113 @@
         
     }
 }
+*/
+
+/*.cuerpo {
+    .navbarPortafolio {
+        width: 120%;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        background: transparent;
+
+        gap: 1rem;
+
+        margin: 1rem 0rem;
+        .iconLogo {
+            grid-column: 2/3;
+            width: 30%;
+        }
+        .home {
+            background-color: #212121;
+            grid-column: 4/5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            letter-spacing: 3px;
+            border-radius: 40px;
+            text-decoration: none;
+            color: $verde;
+        }
+        .portfolio {
+            background-color: #212121;
+            grid-column: 5/6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            letter-spacing: 3px;
+            border-radius: 40px;
+            text-decoration: none;
+            color: $verde;
+        }   
+        .whatsapp {
+            background-color: #25D366;
+            grid-column: 6/7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            letter-spacing: 3px;
+            border-radius: 40px;
+            border-radius: 40px;
+            text-decoration: none;
+            color: $azul;
+        }  
+    }
+    background: $azul;
+    .top {
+        background: $azul;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        h3 {
+            font-weight: 700;
+            line-height: 25px;
+            width: 70%;
+            font: $subtitulo;
+            text-align: center;
+            font-size: 15px;
+            color: $blanco;
+        }
+        h2 {
+            font-weight: 800;
+            font-size: 40px;
+            font: $titulo;
+            color: $verde;
+            span {
+                font-size: 25px;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .menu {
+        width: 100%;
+        height: auto;
+        background: $azul;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        button {
+            margin-top: 1rem;
+            width: 15%;
+            border-radius: 20px;
+            background: $verde;
+            a {
+                text-decoration: none;
+                color: $azul;
+                font: $subtitulo;
+                font-size: 15px;
+                font-weight: 700;
+            }
+        }
+    }
+}*/
